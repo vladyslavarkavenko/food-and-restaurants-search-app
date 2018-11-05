@@ -1,0 +1,67 @@
+.home {
+   display: flex;
+   font-family: 'Niramit', sans-serif;
+}
+
+.home .section {
+    box-sizing: border-box;
+    flex-grow: 7;
+    height: 100vh;
+    transition: ease 1.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: inset 0px 0px 200px 0px rgba(0,0,0,0.5);
+}
+
+.home .section:hover {
+    flex-grow: 93;
+}
+
+.home .food {
+    background: #806525 url(../img/food.jpg) 100%  no-repeat fixed;
+    background-size: cover;
+}
+.home .restaurant {
+    background: #623725 url(../img/restaurant.jpg)  0 100% no-repeat fixed;
+    background-size: cover;
+}
+
+.home .search {
+    margin: auto;
+    width: 60%;
+    display: flex;
+    height: 35px;
+    border-radius: 17.5px;
+    overflow: hidden;
+    box-shadow: 0px 0px 50px 0px #000;
+}
+
+.home .search-input {
+    padding-left: 18px;
+    width: 80%;
+}
+
+.home .search-button {
+    background: #08b428;
+    width: 20%;
+    min-width: 75px;
+    text-align: center;
+    color: white;
+    padding: 5px;
+}
+
+/*Adaptive*/
+
+@media screen and (max-width: 1024px) {
+    .home{
+        flex-direction: column;
+    }
+    .home .section {
+        height: 50vh;
+        background-position: right;
+    }
+}
+
+
+
